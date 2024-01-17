@@ -1,0 +1,3 @@
+export const SCREENS ={
+    SPLASH_SCREEN:"SPLASH_SCREEN"
+}

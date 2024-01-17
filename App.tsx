@@ -1,11 +1,10 @@
 import { View, Text } from 'react-native'
 import React from 'react'
+import SplashScreen from './src/screens/splash_screen/SplashScreen'
 
 const App = () => {
   return (
-    <View>
-      <Text>App</Text>
-    </View>
+    <SplashScreen/>
   )
 }
 
