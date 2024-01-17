@@ -16,11 +16,11 @@ const StackNavigator = () => {
         </Stack.Navigator>
   )
 }
-// const TabBottom = ()=>{
-//     return(
-//         <Tab.Navigator>
-//             <Tab.Screen name='dsa' component={SplashScreen}/>
-//         </Tab.Navigator>
-//     )
-// }
+const TabBottom = ()=>{
+    return(
+        <Tab.Navigator>
+            <Tab.Screen name='dsa' component={SplashScreen}/>
+        </Tab.Navigator>
+    )
+}
 export default StackNavigator
