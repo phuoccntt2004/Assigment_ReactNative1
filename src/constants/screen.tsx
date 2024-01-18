@@ -1,4 +1,6 @@
 export const SCREENS ={
     SPLASH_SCREEN:"SPLASH_SCREEN",
-    LOGIN:'LOGIN'
+    LOGIN:'LOGIN',
+    REGISTER:'REGISTER',
+    HOME:'HOME'
 }

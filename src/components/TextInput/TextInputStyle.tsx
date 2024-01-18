@@ -5,12 +5,13 @@ import { FONTS } from '../../constants/fonts'
 import { COLORS } from '../../constants/colors'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 
- interface PropsInputText{
+
+interface PropsInputText{
     placeholder?:string,
     onChangeText?:(text:string)=>void,
     password?:boolean
     value?:string
-    error?:String
+    error?:string
 }
 const TextInputStyle:React.FC<PropsInputText> = (props) => {
     const {placeholder,onChangeText,password,value,error}=props
@@ -19,7 +20,7 @@ const TextInputStyle:React.FC<PropsInputText> = (props) => {
     <View>
         <View style={{...styles.container,borderColor:error?COLORS.RED:COLORS.GRAY}} >
             <TextInput  
-                style={{color:COLORS.GRAY}}
+                style={{color:COLORS.GRAY, fontFamily:FONTS.REGULAR, width:340}}
                 placeholderTextColor={COLORS.GRAY}
                 placeholder={placeholder} 
                 onChangeText={onChangeText} 
@@ -27,7 +28,10 @@ const TextInputStyle:React.FC<PropsInputText> = (props) => {
                 value={value}
             />
             {password &&(
-                <Icon onPress={()=> setHidePassword(!hidePassword)}  name={hidePassword ? 'eye-outline' : 'eye-off-outline'} style={{color: COLORS.GRAY, fontSize: 22}}/>
+                <Icon 
+                    onPress={()=> setHidePassword(!hidePassword)}  
+                    name={hidePassword ? 'eye-outline' : 'eye-off-outline'} 
+                    style={{color: COLORS.GRAY, fontSize: 22, marginLeft:-30}}/>
             )}
         </View>
         {error && (
@@ -45,13 +49,11 @@ const styles =StyleSheet.create({
         paddingHorizontal:5,
         width:348,
         height:48,
-        fontFamily:FONTS.REGULAR,
-        color:COLORS.GRAY,
         borderRadius:8,
         marginTop:10,
         borderWidth:1,
         justifyContent:'space-between',
-        alignItems:'center'
+        alignItems:'center',
     },
 
    
