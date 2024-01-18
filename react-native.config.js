@@ -1,4 +1,11 @@
 module.exports={
+    dependencies: {
+        'react-native-vector-icons': {
+          platforms: {
+            ios: null,
+          },
+        },
+    },
     project:{
         ios:{},//cấu hình cho ios
         android:{},// cấu hình cho android
