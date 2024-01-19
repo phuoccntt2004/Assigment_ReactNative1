@@ -1,4 +1,4 @@
-import {Image, StyleProp, StyleSheet, Text, TextStyle, View, ViewStyle } from 'react-native'
+import {Image, StyleProp, StyleSheet, Text, TextStyle, ViewStyle } from 'react-native'
 import React from 'react'
 import { TouchableOpacity } from 'react-native-gesture-handler'
 import { COLORS } from '../../constants/colors';
